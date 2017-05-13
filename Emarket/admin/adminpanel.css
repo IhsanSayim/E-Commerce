@@ -1,0 +1,147 @@
+﻿body {
+    background-color:#fcfafa;
+}
+
+ a{
+         text-decoration:none;
+         color:#000000;
+
+     }
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+
+.buttonGorsel{
+    background-color:#385be2;
+    color:white;
+
+}
+
+    .buttonGorsel:hover{
+    background-color:#6581ed;
+
+}
+.textboxGorsel{
+    width:150px;
+    height:25px;
+    border:1px dotted #385be2;
+}
+
+.kutu{
+    width:1150px;
+    height:1000px;
+    margin:0 auto;
+}
+
+    .kutu .ust {
+        width:1150px;
+        height:100px;
+        float:left;
+        background-color:#fcfafa;
+    }
+
+
+    .kutu .govde{
+        width:1150px;
+        height:500px;
+        float:left;
+       
+        margin-bottom:5px;
+        
+    }
+        .kutu .govde .govdesol{
+            width:220px;
+            height:500px;
+            float:left;
+            margin-right:5px;
+
+        }
+        img{
+            border:0px;
+
+        }
+.flt{
+    float:left;
+
+}
+.kutu .govde .govdesol .menubg{
+    clear:left;
+     background-color:#4d7ee5;
+      width:220px;}
+
+.kutu .govde .govdesol .menu{
+    float:left;
+    clear:left;
+    border-radius:5px;
+
+}
+.kutu .govde .govdesol .menu li {
+    margin:0px 0px 0px 0px;
+    list-style:none;
+    }
+
+.kutu .govde .govdesol .menu a,.kutu .govde .govdesol .menu a:visited {
+    width:220px;
+    height:22px;
+    /*margin:0px 0px 2px -32px;
+    position:relative;*/
+    display:block;
+    color:white;
+    text-decoration:none;
+   
+    padding:4px 0 0 8px;
+    }
+.kutu .govde .govdesol .menu a,.kutu .govde .govdesol .menu a:visited {
+    width:220px;
+    height:22px;
+    /*margin:0px 0px 2px -32px;
+    position:relative;*/
+    display:block;
+    color:white;
+    text-decoration:none;
+    
+    padding:4px 0 0 8px;
+    }
+.kutu .govde .govdesol.menu a:hover, .kutu .govde .govdesol .menu a:active,
+.kutu .govde .govdesol .menu li.current_page_item a,.kutu .govde .govdesol .menu li.current_page_item a:visited  {
+   
+    text-decoration:none;
+    }    
+.kutu .govde .govdesol .bot{clear:left;}
+
+        .kutu .govde .govdesag{
+           width:925px;
+           height:500px;
+           float:right;
+           
+        }
+        .textbox{
+         border-radius:5px;
+         height:30px;
+         width:200px;
+         border-color:#eae8e8;
+
+     }
+
+        .xx{
+    float:right;
+}
+
+.xxx{
+    text-align:center;
+}
+
+.xxxx{
+    border-radius:5px;
+    border:solid 1px #999999;
+}
+
+        
+
+
+    
+

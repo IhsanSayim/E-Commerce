@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminpanel.master.cs" Inherits="Emarket.admin.adminpanel" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Admin Panel</title>
+    <link href="adminpanel.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="kutu">
+
+        <div class="ust"></div>
+        <div class="govde">
+            <div class="govdesol">
+                
+    <div class="menubg flt" style="border-radius:5px;">
+   
+        <div style="height:25px; color:white; font-weight:bolder; margin-top:3px;  background-repeat:repeat-x">
+            <a href="urunekle.aspx" style="text-decoration:none; color:#FFFFFF"><asp:Label ID="lbl_urunekle" runat="server" Text="Ürün Ekle"></asp:Label></a> 
+        </div>
+        <div style="height:25px; color:white; font-weight:bolder; margin-top:3px;  background-repeat:repeat-x">
+           <a href="urungunleme.aspx" style="text-decoration:none; color:#FFFFFF"> <asp:Label ID="lbl_urungunle" runat="server" Text="Ürün Günle"></asp:Label></a>
+        </div>
+       
+</div>                
+            </div>
+            <div class="govdesag"><asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder></div>
+        </div>
+        
+           
+    </div>
+    </form>
+</body>
+</html>

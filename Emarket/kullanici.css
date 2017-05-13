@@ -1,0 +1,164 @@
+﻿body {
+    font-family:Arial;
+    background-color:#fff;
+    background-image:url("/Images/arka_plan.jpg");
+    
+    background-repeat:no-repeat;
+    background-repeat:repeat-x;
+    
+}
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+
+.kutu{
+    width:1152px;
+    height:auto;
+    margin:0 auto;
+}
+
+    .kutu .ust {
+
+       
+        width:1152px;
+        height:100px;
+        float:left;
+        text-align:right;
+       
+        
+    }
+
+    .kutu .ust .giris{
+        width:550px;
+        height:100px;
+        float:right;
+        margin-top:20px;
+        text-align:left;
+       
+
+    }
+
+    .kutu .menu {
+        border-radius: 5px;
+        color: white;
+        width: 1152px;
+        height: 50px;
+        float: left;
+        margin-top:15px;
+        background-color: #fff;
+        margin-bottom: 15px;
+        background-image: url('Images/menu2.jpg');
+
+    }
+
+    .kutu .slider{
+        width:1152px;
+        height:300px;
+        float:left;
+      
+        
+        
+    }
+
+    .kutu .govde{
+        /*border:1px inset #b7b6b6;*/
+        width:1150px;
+        height:auto;
+        float:left;
+        margin-top:40px;
+        margin-bottom:5px;
+        border-radius:5px;
+        
+    }
+        .kutu .govde .uyeol{
+            width:700px;
+            height:auto;
+            margin-left:230px; 
+           
+            
+            
+            
+
+
+    }
+        .kutu .govde .govdesol{
+            width:925px;
+            height:auto;
+            float:left;
+           
+            margin-right:5px;
+
+        }
+
+        .kutu .govde .govdesol .govdesolust{
+            height:auto;
+            width:925px;
+          
+            margin-bottom:5px;
+        }
+       
+
+        .kutu .govde .govdesol .govdesolalt{
+            height:25px;
+            width:925px;
+           
+
+
+        }
+
+        .kutu .govde .govdesag{
+           width:220px;
+           height:auto;
+           float:right;
+           
+        }
+
+     .kutu .alt{
+        
+         border-radius:5px;
+         width:1152px;
+         height:50px;
+         float:left;
+         background-color:#385be2;
+         
+     }
+
+     a{
+         text-decoration:none;
+         color:#000000;
+
+     }
+
+     .textbox{
+         border-radius:5px;
+         height:30px;
+         width:200px;
+         border-color:#eae8e8;
+
+     }
+     
+
+.takeItcenter
+
+{
+
+text-align:"center";
+
+} 
+
+.xx{
+    float:right;
+}
+
+.xxx{
+    text-align:center;
+}
+
+.xxxx{
+    border-radius:5px;
+    border:solid 1px #999999;
+}

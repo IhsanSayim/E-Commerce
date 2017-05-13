@@ -1,0 +1,40 @@
+﻿body {
+     background-color:#fcfafa;
+     background-size:100% 720px;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    border:0;
+
+}
+
+.kutu {
+    width:500px;
+    height:400px;
+    background-color: rgba(57,73,94,0.7);
+    border-radius:4px;
+    text-align:center;
+    color:white;
+    margin:0 auto;
+    margin-top:150px;
+
+    
+
+}
+
+.hata{
+    color:red;
+    font-size:20px;
+}
+
+input   {
+    height:45px;
+    width:300px;
+    margin-bottom:20px;
+    margin-top:40px;
+    
+
+}

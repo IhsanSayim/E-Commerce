@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="kullanici.master.cs" Inherits="Emarket.kullanici" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>E-Market</title>
+    <link href="kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            margin-top: 0;
+        }
+
+        .auto-style2 {
+            width: 100%;
+            height: 50px;
+        }
+
+        .auto-style4 {
+            width: 230px;
+        }
+
+        .auto-style5 {
+            width: 100%;
+        }
+    </style>
+
+     <script src="sliderJS/jquery.js"></script>
+    <script src="sliderJS/amazingslider.js"></script>
+    <script src="sliderJS/initslider-1.js"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="kutu">
+        <div class="ust">
+            <div class="giris">
+                
+
+
+            <asp:TextBox ID="txt_kullaniciadi" runat="server" Height="34px" placeholder=" Kullanıcı Adı"></asp:TextBox>&nbsp&nbsp&nbsp
+                <table class="auto-style5" style="float:right; text-align:right;">
+                    <tr>
+                        <td> <asp:Label ID="lb_hosgeldiniz" runat="server" Text="Hoşgeldiniz," Visible="false" CssClass="xxx" ></asp:Label>&nbsp; <a href="kullanicipanel/profil.aspx?musteriID=<%#Eval ("id") %>&islem=duzenle""><asp:Label ID="lb_profil" runat="server" Text="Label" Visible="false" CssClass="xxx" ></asp:Label></a></td>
+                        </tr>
+                       <tr> 
+                           <td><a href="sepet.aspx"><asp:Label ID="Label1" runat="server" Text="Sepetim" Visible="False" ></asp:Label></a></td>
+
+                       </tr>
+                      <tr>  <td>
+                          <asp:Button ID="btn_cikis" runat="server" Text="Çıkış" OnClick="btn_cikis_Click" Visible="false" Height="33px" Width="60px" CssClass="auto-style1" BackColor="#999999" style="border-radius:5px; font-size:15px;"/></td></tr>
+                   
+                </table>
+
+                <asp:TextBox ID="txt_sifre" runat="server"  Height="34px" TextMode="Password" placeholder=" Şifre">
+                </asp:TextBox>&nbsp&nbsp&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                <asp:Button ID="btn_giris" runat="server" Text="Giriş" Height="33px" Width="60px" CssClass="auto-style1" BackColor="#999999" style="border-radius:5px; font-size:15px;" OnClick="btn_giris_Click"/>&nbsp&nbsp&nbsp<a href="/kullanicipanel/uyeol2.aspx" ><asp:Label ID="lb_uyeol" runat="server" Text="Üye Ol"></asp:Label></a>
+
+            </div>
+        </div>
+        <div class="menu">
+            <table class="auto-style2" style="text-align:center;">
+                <tr>
+                    <td style="border-right-style: dotted; border-width: 1px; border-color: #c3c3c3; border-right-style: solid;" class="auto-style4">
+                        <a href="default.aspx"><asp:Label ID="lbl_anasayfa" runat="server" Text="Ana Sayfa" Font-Bold="True" Font-Size="15pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                    <td style="border-right-style: solid; border-style: none solid none none; border-width: 1px; border-color:#c3c3c3;" class="auto-style4">
+                        <a href="kahvaltilik.aspx"><asp:Label ID="lbl_kahvaltilik" runat="server" Text="Kahvaltılık" Font-Bold="True" Font-Size="14pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                    <td style="border-right-style: solid; border-style: none solid none none; border-width: 1px; border-color:#c3c3c3;" class="auto-style4">
+                        <a href="gida.aspx"><asp:Label ID="lbl_gida" runat="server" Text="Gıda" Font-Bold="True" Font-Size="14pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                    <td style="border-right-style: solid; border-style: none solid none none; border-width: 1px; border-color: #c3c3c3;" class="auto-style4">
+                        <a href="icecekler.aspx"><asp:Label ID="lbl_icecek" runat="server" Text="İçecekler" Font-Bold="True" Font-Size="14pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                    <td>
+                        <a href="temizlik.aspx"><asp:Label ID="lbl_temizlik" runat="server" Text="Temizlik" Font-Bold="True" Font-Size="14pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="slider">
+
+             <div id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+            <ul class="amazingslider-slides" style="display:none;">
+                <li><img src="sresim/slider3.png" alt="slider3"  title="slider3" />
+                </li>
+                <li><img src="sresim/slider4.png" alt="slider4"  title="slider4" />
+                </li>
+            </ul>
+            <ul class="amazingslider-thumbnails" style="display:none;">
+                <li><img src="sresim/slider3-tn.png" alt="slider3" title="slider3" /></li>
+                <li><img src="sresim/slider4-tn.png" alt="slider4" title="slider4" /></li>
+            </ul>
+        <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive JavaScript Slideshow">Responsive JavaScript Slideshow</a></div>
+        </div>
+        </div>
+        <div class="govde">
+            <div class="govdesol">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="govdesag">
+                <asp:Image ID="Image1" runat="server" Height="491px" ImageUrl="~/Images/reklam.jpg" Width="220px" />
+            </div>
+            
+        </div>
+         <div class="alt" style="color:white; text-align:center;">&nbsp;&nbsp;&nbsp;&nbsp; &copy;Tümhakları saklıdır</div>
+           
+    </div>
+    </form>
+</body>
+</html>

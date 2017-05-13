@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="uyepaneli.master.cs" Inherits="Emarket.kullanicipanel.uyepaneli" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Üye Olma Paneli</title>
+    <link href="../kullanici.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            color: #333333;
+            letter-spacing: normal;
+            background-color: #FFFFFF;
+        }
+        .auto-style2 {
+            width: 100%;
+            height: 50px;
+        }
+        .auto-style3 {
+            width: 230px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="kutu">
+        <div class="ust">
+            <div class="giris">
+
+
+            <asp:TextBox ID="txt_kullaniciadi" runat="server" Height="34px" placeholder=" Kullanıcı Adı"></asp:TextBox>&nbsp&nbsp&nbsp
+                <asp:TextBox ID="txt_sifre" runat="server"  Height="34px" TextMode="Password" placeholder=" Şifre"></asp:TextBox>&nbsp&nbsp&nbsp
+
+
+             
+
+
+                <asp:Button ID="btn_giris" runat="server" Text="Giriş" CssClass="auto-style1" BackColor="#999999" style="border-radius:5px; font-size:15px; height:34px; width:60px;" OnClick="btn_giris_Click1"/>&nbsp&nbsp&nbsp<a href="uyeol2.aspx">Üye Ol</a>
+
+
+             
+
+
+            </div>
+        </div>
+        <div class="menu">
+             <table class="auto-style2" style="text-align:center;">
+                <tr>
+                    <td style="border-right-style: dotted; border-width: 2px; border-color: #FFFFFF; border-right-style: solid;" class="auto-style3">
+                       <a href="../default.aspx"> <asp:Label ID="lbl_anasayfa" runat="server" Text="Ana Sayfa" Font-Bold="True" Font-Size="15pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                    <td style="border-right-style: solid; border-style: none solid none none; border-width: 2px; border-color: #FFFFFF;" class="auto-style3">
+                       <a href="../kahvaltilik.aspx"> <asp:Label ID="lbl_kahvaltilik" runat="server" Text="Kahvaltılık" Font-Size="14pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                    <td style="border-right-style: solid; border-style: none solid none none; border-width: 2px; border-color: #FFFFFF;" class="auto-style3">
+                      <a href="../gida.aspx">  <asp:Label ID="lbl_gida" runat="server" Text="Gıda" Font-Size="14pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                    <td style="border-right-style: solid; border-style: none solid none none; border-width: 2px; border-color: #FFFFFF;" class="auto-style3">
+                       <a href="../icecek.aspx"><asp:Label ID="lbl_icecek" runat="server" Text="İçecekler" Font-Size="14pt" ForeColor="#E4E4E4"></asp:Label></a> 
+                    </td>
+                    <td>
+                       <a href="../temizlik.aspx"> <asp:Label ID="lbl_temizlik" runat="server" Text="Temizlik" Font-Size="14pt" ForeColor="#E4E4E4"></asp:Label></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+       
+        <div class="govde">
+            <div class="uyeol">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+
+               
+
+            </div>
+        </div>
+           <div class="alt" style="color:white; text-align:center;">&nbsp;&nbsp;&nbsp;&nbsp; &copy;Tümhakları saklıdır</div>
+           
+    </div>
+    </form>
+</body>
+</html>
